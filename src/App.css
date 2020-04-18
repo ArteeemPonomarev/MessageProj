@@ -1,46 +1,5 @@
 .container {
     display: flex;
     justify-content: center;
-}
-.message {
-}
-.message__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.message__img-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-.message__block {
-    background-color: rgb(35, 1, 68);
-    color: rgb(236, 233, 9);
-    padding: 5px 10px 5px 10px;
-    border-radius:5px 5px 5px 0;
-    position: relative;
-    margin-left:10px;
-}
-.message__block::before {
-    content: "";
-    position: absolute;
-    border-bottom: 15px solid rgb(35, 1, 68);
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
-    bottom: 0;
-    left:-12px;
-
-}
-.messager__block-username {
-    font-weight: 400;
-    padding: 0px;
-    margin:0px;
-}
-.message__block-text {
-    max-width: 300px;
-}
-.message__block-time {
-    display: flex;
-    justify-content: flex-end;
+    padding-top: 20px;
 }
