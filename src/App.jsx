@@ -10,7 +10,7 @@ class App extends React.Component {
       <div class="container">
         <MessageImg />
         <MessageBlock />
-    </div>
+      </div>
     );
   }
 }

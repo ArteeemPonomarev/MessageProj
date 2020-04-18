@@ -6,7 +6,7 @@ class Username extends React.Component {
     render = () => {
         return (
             <h3 class={style.messagerBlockUsername}>
-            Артем Пономарев
+                Артем Пономарев
             </h3>
         )
     }
