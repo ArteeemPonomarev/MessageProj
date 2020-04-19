@@ -1,0 +1,16 @@
+.property {
+    background-color: rgb(73, 173, 132);
+    padding:20px;
+    border-radius: 10px;
+    border: 2px solid rgb(52, 129, 97);
+    box-shadow: 5px 5px aquamarine;
+}
+
+.propertyOther {
+    background-color: rgb(255, 103, 161);
+    font-weight: 600;
+    padding:20px;
+    border-radius: 10px;
+    border: 2px solid rgb(104, 6, 6);
+    box-shadow: 5px 5px rgb(129, 52, 100);
+}

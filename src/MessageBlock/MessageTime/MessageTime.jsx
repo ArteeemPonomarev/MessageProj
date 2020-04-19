@@ -6,8 +6,8 @@ let date = new Date();
 class MessageTime extends React.Component {
     render = () => {
         return (
-            <div class={styles.messageBlockTime}>
-                {date.getHours()}:{date.getMinutes()}
+            <div className={styles.messageBlockTime}>
+                {date.getHours()+1}:{date.getMinutes()}
             </div>
         )
     }

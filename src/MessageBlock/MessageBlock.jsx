@@ -7,7 +7,7 @@ import MessageTime from './MessageTime/MessageTime';
 class MessageBlock extends React.Component {
     render = () => {
         return (
-            <div class={style.messageBlock}>
+            <div className={style.messageBlock}>
                 <Username />
                 <MessageText />
                 <MessageTime />

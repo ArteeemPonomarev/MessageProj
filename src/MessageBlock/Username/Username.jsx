@@ -5,7 +5,7 @@ import style from './Username.module.css';
 class Username extends React.Component {
     render = () => {
         return (
-            <h3 class={style.messagerBlockUsername}>
+            <h3 className={style.messagerBlockUsername}>
                 Артем Пономарев
             </h3>
         )
