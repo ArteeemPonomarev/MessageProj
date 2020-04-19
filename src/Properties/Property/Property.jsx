@@ -8,7 +8,7 @@ class Property extends React.Component {
       
 
         return (
-            <p className={this.props.nameclass}>
+            <p className={this.props.nameClass}>
                 {this.props.property}
             </p>
         )
