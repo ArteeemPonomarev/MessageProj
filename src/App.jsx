@@ -3,6 +3,7 @@ import './App.css';
 import MessageImg from './MessageImg/MessageImg'
 import MessageBlock from './MessageBlock/MessageBlock';
 import Properties from './Properties/Properties';
+import Counter from "./Counter/Counter";
 
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
           <MessageBlock />
         </div>
         <Properties />
+        <Counter />
       </div>
     );
   }
