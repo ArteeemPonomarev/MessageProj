@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MessageImg from './MessageImg/MessageImg'
+import MessageImg from './MessageBlock/MessageImg/MessageImg'
 import MessageBlock from './MessageBlock/MessageBlock';
 import Properties from './Properties/Properties';
 import Counter from "./Counter/Counter";

@@ -10,7 +10,8 @@ class Counter extends React.Component {
     state = {
         value: 0,
         inputValue: '',
-        names: []
+        names: [],
+        error: false
     }
 
     onButtonClick = () => {
@@ -21,26 +22,38 @@ class Counter extends React.Component {
                 names: [...this.state.names, this.state.inputValue],
                 inputValue: '',
             })
+        } else {
+            this.setState({
+                error: true
+            })
         }
     }
 
     onChangeInput = (e) => {
         let newValue = e.currentTarget.value;
         this.setState({
+            error: false,
             inputValue: newValue
         })
     }
     onResetClick = () => {
         this.setState({
             value: 0,
-            names: []
+            names: [],
+            error: false
         })
+    }
+
+    onKeyPressAction = (e) => {
+        if (e.key === 'Enter') {
+            this.onButtonClick();
+        }
     }
 
     render = () => {
 
-        let names = this.state.names.map(name => <Name name={name}/>)
-
+        const names = this.state.names.map(name => <Name name={name}/>)
+        const classError = this.state.error === true ? 'error' : '';
         return (
 
             <div className={style.counter}>
@@ -49,7 +62,9 @@ class Counter extends React.Component {
                 <Input type={'text'}
                        value={this.state.inputValue}
                        placeholder={'Enter your message'}
-                       onChange={this.onChangeInput}/>
+                       onChange={this.onChangeInput}
+                       errorClass={classError}
+                       onKeyPressAction={this.onKeyPressAction}/>
 
                 <div className={style.buttons}>
                     <Button onClick={this.onButtonClick}>

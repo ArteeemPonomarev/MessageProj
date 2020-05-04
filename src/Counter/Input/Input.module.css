@@ -1,3 +1,7 @@
 .input {
     width: 250px;
 }
+
+.error {
+    border-color: crimson;
+}
