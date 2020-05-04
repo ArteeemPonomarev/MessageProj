@@ -3,12 +3,13 @@ import style from './Counter.module.css';
 import Input from "./Input/Input";
 import Button from "./Button/Button";
 import Name from "./Name/Name";
+import Display from "./Display/Display";
 
 
 class Counter extends React.Component {
     state = {
         value: 0,
-        inputValue:'',
+        inputValue: '',
         names: []
     }
 
@@ -42,20 +43,17 @@ class Counter extends React.Component {
 
         return (
             <div className={style.counter}>
-                <div>
-                    <span>{this.state.value}</span>
-                </div>
-                <div>
-                    <Input type={'text'}
-                           value={this.state.inputValue}
-                           placeholder={'Enter your message'}
-                           onChange={this.onChangeInput} />
-                </div>
+                <Display value={this.state.value}/>
+
+                <Input type={'text'}
+                       value={this.state.inputValue}
+                       placeholder={'Enter your message'}
+                       onChange={this.onChangeInput}/>
+
                 <div>
                     <Button onClick={this.onButtonClick}>
                         Press
                     </Button>
-
                     <Button onClick={this.onResetClick}>
                         Reset
                     </Button>
