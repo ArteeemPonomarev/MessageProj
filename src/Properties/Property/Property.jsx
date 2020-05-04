@@ -1,5 +1,5 @@
 import React from 'react';
-import './Property.css';
+import styles from './Property.module.css';
 
 class Property extends React.Component {
 
@@ -8,7 +8,7 @@ class Property extends React.Component {
       
 
         return (
-            <p className={this.props.nameClass}>
+            <p className={styles[this.props.nameClass]}>
                 {this.props.property}
             </p>
         )

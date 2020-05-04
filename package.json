@@ -2,7 +2,7 @@
   "name": "message-proj",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://arteeemponomarev.github.io/MessageProj",
+  "homepage": "https://arteeemponomarev.github.io/MessageProj",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
