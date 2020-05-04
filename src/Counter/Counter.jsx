@@ -42,6 +42,7 @@ class Counter extends React.Component {
         let names = this.state.names.map(name => <Name name={name}/>)
 
         return (
+
             <div className={style.counter}>
                 <Display value={this.state.value}/>
 
@@ -50,7 +51,7 @@ class Counter extends React.Component {
                        placeholder={'Enter your message'}
                        onChange={this.onChangeInput}/>
 
-                <div>
+                <div className={style.buttons}>
                     <Button onClick={this.onButtonClick}>
                         Press
                     </Button>

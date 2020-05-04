@@ -1,0 +1,8 @@
+.button {
+    width: 90px;
+    height: 30px;
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    margin: 10px;
+}
